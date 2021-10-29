@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="mobile-nav">
+      <div>
+        <img id="bars" src="images/icon-menu.svg" alt="">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="mobile-nav-right">
+        <img class="cart mobile-icon" src="images/icon-cart.svg" alt="">
+        <img class="mobile-icon" src="images/image-avatar.png" alt="">
+      </div>
+    </nav>
+    <div class="cart-modal">
+      <div class="cart-title">
+        <h1>Cart</h1>
+      </div>
+      <h2 class="empty-cart"></h2>
+      <div class="cart-filled">
+        <div class="cart-filled-flex">
+          <div>
+            <img class="cart-image" src="images/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div class="cart-flex-column">
+            <h3>Fall Limited Edition Sneakers</h3>
+            <div>$125.00 x <span class="quantity-span"></span>=<span class="bill"></span></div>
+          </div>
+          <div class="trash">
+            <img src="images/icon-delete.svg" alt="">
+          </div>
+        </div>
+        <div>
+          <button class="checkout-button">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <div class="side-panel">
+      <img id="close" src="images/icon-close.svg" alt="">
+      <ul>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <nav class="desktop-nav">
+      <ul class="desktop-nav-left">
+        <li><img src="images/logo.svg" alt=""></li>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <ul class="desktop-nav-right">
+        <li><img class="cart desktop-icon"  src="images/icon-cart.svg" alt=""></li>
+        <li><img class="desktop-icon avatar" src="images/image-avatar.png" alt=""></li>
+      </ul>
+    </nav>
+    <div class="bubble">0</div>
+  </header>
+  <main>
+    <div class="slider">
+      <button id="left">&#10094;</button>
+      <img src="" id="slide">
+      <button id="right">&#10095;</button>
+    </div>
+    <div class="lightbox">
+      <div class="featured-div">
+        <img class="featured" src="images/image-product-1.jpg" alt="">
+      </div>
+      <div class="thumbnail-div">
+        <img class="thumbnail active" src="images/image-product-1-thumbnail.jpg" alt="">
+        <img class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
+        <img class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
+        <img class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+      <div class="modal">
+        <img class="modal-close" src="images/icon-close.svg" alt="">
+        <button id="modal-left">&#10094;</button>
+        <img class="modal-featured" src="" alt="">
+        <button id="modal-right">&#10095;</button>
+        <div class="modal-thumbnail-div">
+          <img class="thumbnail" src="images/image-product-1-thumbnail.jpg" alt="">
+          <img class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
+          <img class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
+          <img class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <section class="text-section">
+      <p class="orange company">Sneaker Company</p>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price-div">
+        <div>$125.00 <span class="discount orange">50%</span></div>
+        <div class="line-through">$250.00</div>
+      </div>
+      <div class="controls-wrapper">
+        <div class="controls">
+          <div id="subtract"><img src="images/icon-minus.svg" alt="subtract"></div>
+          <div id="quantity">0</div>
+          <div id="plus"><img src="images/icon-plus.svg" alt="add"></div>
+        </div>
+        <div class="button-container">
+          <button class="add-button"><span><img src="images/icon-cart-white.svg" alt=""></span> Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
